@@ -135,7 +135,7 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Conctacts
+                    Contacts
                   </Typography>
                 </MenuItem>
               </Box>
