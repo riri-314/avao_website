@@ -14,7 +14,6 @@ const AnimatedSVG = () => {
       };
   return (
     <div style={logoStyle}>
-      {/* Insert your SVG path below. Replace `d` with your SVG path data */}
       <svg viewBox="0 0 607 919" xmlns="http://www.w3.org/2000/svg">
         <path
           className="svg-path"
