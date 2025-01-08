@@ -6,8 +6,6 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 import FacebookIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/X";
 
 import image from "../assets/avao_blason.png"; // adjust the path as needed
 
@@ -51,6 +49,24 @@ export default function Footer() {
               <img src={image} style={logoStyle} alt="logo of sitemark" />
             </Box>
           </Box>
+          <Stack
+          direction="row"
+          justifyContent="left"
+          spacing={1}
+          useFlexGap
+          sx={{
+            color: "text.secondary",
+          }}
+        >
+          <IconButton
+            color="inherit"
+            href="https://github.com/riri-314/avao_website"
+            aria-label="GitHub"
+            sx={{ alignSelf: "center" }}
+          >
+            <FacebookIcon />
+          </IconButton>
+        </Stack>
         </Box>
         <Box
           sx={{
@@ -75,51 +91,7 @@ export default function Footer() {
             Contacts
           </Link>
         </Box>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          pt: { xs: 4, sm: 8 },
-          width: "100%",
-          borderTop: "1px solid",
-          borderColor: "divider",
-        }}
-      >
-        <Stack
-          direction="row"
-          justifyContent="left"
-          spacing={1}
-          useFlexGap
-          sx={{
-            color: "text.secondary",
-          }}
-        >
-          <IconButton
-            color="inherit"
-            href=""
-            aria-label="GitHub"
-            sx={{ alignSelf: "center" }}
-          >
-            <FacebookIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href=""
-            aria-label="X"
-            sx={{ alignSelf: "center" }}
-          >
-            <TwitterIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href=""
-            aria-label="LinkedIn"
-            sx={{ alignSelf: "center" }}
-          >
-            <LinkedInIcon />
-          </IconButton>
-        </Stack>
+        
       </Box>
     </Container>
   );
